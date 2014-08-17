@@ -4,7 +4,7 @@ from django.db import models
 class Collection(models.Model):
   '''コレクション'''
   name = models.CharField(u'コレクション名', max_length=255)
-  saummary = models.TextField(u'概要', blank=True)
+  summary = models.TextField(u'概要', blank=True)
 
   def __unicode__(self):
     return self.name
