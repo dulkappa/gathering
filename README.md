@@ -12,14 +12,22 @@ Gathering
 
 ディレクトリ構造
 ---
-```
+```shell
 gathering
-  ├ gathering
-  |   ├ __init__.py
-  |   ├ settings.py  
-  |   ├ urls.py
-  |   └ wsgi.py
-  └ manage.py
+├ README.md
+├ cms
+| ├ __init__.py
+| ├ admin.py
+| ├ models.py
+| ├ tests.py
+| └ views.py
+└ db.sqlite3
+├ gathering
+| ├ __init__.py
+| ├ settings.py  
+| ├ urls.py
+| └ wsgi.py
+└ manage.py
 ```
 
 その他
