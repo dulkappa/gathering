@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load bootstrap %}
+
+{% block title %}アイテムの編集{% endblock title %}
+
+{% block content %}
+    <h3 class="page-header">アイテムの編集</h3>
+    {% if item_id %}
+    <form action="{% url 'cms:item_mod' collection_id=collection_id item_id=item_id %}" method="post" class="form-horizontal" role="form">
+    {% else %}
+    <form action="{% url 'cms:item_add' collection_id=collection_id %}" method="post" class="form-horizontal" role="form">
+    {% endif %}
+      {% csrf_token %}
+      {{ form|bootstrap_horizontal }}
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-primary">送信</button>
+        </div>
+      </div>
+    </form>
+    <a href="{% url 'cms:item_list' collection_id=collection_id %}" class="btn btn-default btn-sm">戻る</a>
+{% endblock content %}

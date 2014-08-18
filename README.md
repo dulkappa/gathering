@@ -36,7 +36,9 @@ gathering
 |   ├ base.html
 |   └ cms
 |     ├ collection_edit.html
-|     └ collection_list.html
+|     ├ collection_list.html
+|     ├ item_edit.html
+|     └ item_list.html
 ├ gathering # プロジェクト管理ディレクトリ
 | ├ __init__.py
 | ├ settings.py  
