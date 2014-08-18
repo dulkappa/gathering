@@ -1,5 +1,6 @@
 Gathering
 ===
+[![Build Status](https://secure.travis-ci.org/dulkappa/gathering.png)](https://travis-ci.org/dulkappa/gathering)
 
 コレクションを管理するためのWebアプリケーション.  
 初期バージョンでは単純に登録/表示/編集/削除のみができる仕様にする予定.
