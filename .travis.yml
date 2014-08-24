@@ -6,4 +6,5 @@ install:
   - pip install django
 
 script:
+  - python manage.py runserver
   - python manage.py test cms
