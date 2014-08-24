@@ -1,5 +1,9 @@
 language: python
 python:
-  - 2.7
+  - "2.7"
 
-script: python manage.py test cms
+install:
+  - pip install django
+
+script:
+  - python manage.py test cms
